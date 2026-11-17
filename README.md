@@ -4,6 +4,14 @@
 
 ---
 
+## 📸 Screenshots
+
+<!-- الصق سطري الصور أو اسحب صور البرنامج وأفلتها في السطر الفارغ تحت هذا السطر مباشرة -->
+<img width="503" height="474" alt="image" src="https://github.com/user-attachments/assets/3d3d21df-16a1-487f-aba9-3cad80aff4ac" />
+<img width="537" height="694" alt="image" src="https://github.com/user-attachments/assets/cd6e8b1d-9555-4bca-b6f6-70f68705b82b" />
+
+---
+
 ## ✨ Features
 
 * **🎚 Per-App Volume Mixer Flyout:** Control individual application volumes, system sounds, and master volume from a sleek, translucent Windows 11 flyout.
@@ -33,5 +41,18 @@ Requires **Python 3.9+** on Windows 10/11.
 
 ```bash
 pip install pycaw comtypes pywin32 pillow pystray psutil
-python audio_hub.py<img width="537" height="694" alt="image" src="https://github.com/user-attachments/assets/e23d795a-4ee4-491f-95d9-49561846c598" />
-<img width="503" height="474" alt="image" src="https://github.com/user-attachments/assets/463674b7-9133-4e84-b94a-2c9e01ec661d" />
+python audio_hub.py
+```
+
+To build a standalone `.exe` using PyInstaller:
+
+```bash
+pip install pyinstaller
+python -m PyInstaller --noconsole --onefile --name "AudioHub" --icon "audiohub.ico" --hidden-import "pystray._win32" audio_hub.py
+```
+
+---
+
+## 📄 License
+
+Licensed under the [MIT License](LICENSE).
